@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="jobs.css" />
+</head>
+
+<body>
+  <!-- Primary Header -->
+  <div id="primary_header">
+     <img id ="logo" src="../images/limpop-province.png"   >
+
+  </div>
+
+  <!-- Secondary Header -->
+  <div id="secondary_header">
+    <h1>Welcome to Tshilidzini Hospital</h1>
+
+  </div>
+
+  <!-- Navigation -->
+  <div id="nav">
+    <div id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../client.html">Health Information Topics</a>
+      <a href="../about_us.html">About us</a>
+      <a href="../Appointment.html">Documents</a>
+      <a href="../services.html">Services</a>
+      <a href="../HealthFacilities.html">Health Facilities</a>
+      <a href="contact.html">Contact us</a>
+      <a href="news-media.html">News & Media</a>
+      <a class="active" href="jobs.html">Jobs</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+   <nav class="breadcrumb">
+    <a href="../index.html"><i class="fa fa-home"></i> Home</a>
+    <span>/</span>
+    <span class="current">Jobs</span>
+  </nav>
+
+
+  <!-- Main Content -->
+  <div id="main-content" style="padding: 50px 20px;">
+    <div class="jobs-container">
+      <h2 class="jobs-title">Career Opportunities at Tshilidzini Hospital</h2>
+      <p class="jobs-intro">Join our dedicated team of healthcare professionals and contribute to improving the health and well-being of our community in Limpopo, South Africa.</p>
+
+      <!-- Job Categories -->
+      <div class="job-categories">
+        <div class="job-category">
+          <i class="fa fa-user-md category-icon"></i>
+          <h3>Medical Positions</h3>
+          <p>Doctors, nurses, and allied health professionals</p>
+          <button class="category-btn" onclick="showJobs('medical')">View Positions</button>
+        </div>
+        <div class="job-category">
+          <i class="fa fa-cogs category-icon"></i>
+          <h3>Administrative Roles</h3>
+          <p>Support staff and administrative positions</p>
+          <button class="category-btn" onclick="showJobs('admin')">View Positions</button>
+        </div>
+        <div class="job-category">
+          <i class="fa fa-graduation-cap category-icon"></i>
+          <h3>Internships</h3>
+          <p>Training opportunities for students</p>
+          <button class="category-btn" onclick="showJobs('internship')">View Positions</button>
+        </div>
+      </div>
+
+      <!-- Job Listings -->
+      <div id="job-listings" class="job-listings">
+        <!-- Medical Jobs -->
+        <div id="medical-jobs" class="job-section">
+          <h3><i class="fa fa-user-md"></i> Medical Positions</h3>
+          <div class="job-card">
+            <h4>Senior Medical Officer</h4>
+            <p class="job-location"><i class="fa fa-map-marker"></i> Tshilidzini Hospital, Shayandima</p>
+            <p class="job-description">Lead medical practitioner responsible for patient care, diagnosis, and treatment coordination.</p>
+            <div class="job-details">
+              <h5>Requirements:</h5>
+              <ul>
+                <li>MBBS/MBChB degree</li>
+                <li>Registration with HPCSA</li>
+                <li>Minimum 5 years experience</li>
+                <li>Strong clinical skills</li>
+              </ul>
+              <h5>Benefits:</h5>
+              <ul>
+                <li>Competitive salary</li>
+                <li>Medical aid</li>
+                <li>Pension fund</li>
+                <li>Professional development</li>
+              </ul>
+            </div>
+            <button class="apply-btn">Apply Now</button>
+          </div>
+          <div class="job-card">
+            <h4>Registered Nurse</h4>
+            <p class="job-location"><i class="fa fa-map-marker"></i> Tshilidzini Hospital, Shayandima</p>
+            <p class="job-description">Provide comprehensive nursing care to patients in various departments.</p>
+            <div class="job-details">
+              <h5>Requirements:</h5>
+              <ul>
+                <li>Diploma/Degree in Nursing</li>
+                <li>SANC registration</li>
+                <li>2+ years experience preferred</li>
+                <li>Compassionate and dedicated</li>
+              </ul>
+              <h5>Benefits:</h5>
+              <ul>
+                <li>Competitive salary</li>
+                <li>Medical aid</li>
+                <li>Uniform allowance</li>
+                <li>Continuous training</li>
+              </ul>
+            </div>
+            <button class="apply-btn">Apply Now</button>
+          </div>
+        </div>
+
+        <!-- Admin Jobs -->
+        <div id="admin-jobs" class="job-section">
+          <h3><i class="fa fa-cogs"></i> Administrative Roles</h3>
+          <div class="job-card">
+            <h4>Administrative Assistant</h4>
+            <p class="job-location"><i class="fa fa-map-marker"></i> Tshilidzini Hospital, Shayandima</p>
+            <p class="job-description">Support administrative functions and provide clerical assistance to hospital staff.</p>
+            <div class="job-details">
+              <h5>Requirements:</h5>
+              <ul>
+                <li>Matric certificate</li>
+                <li>Computer literacy</li>
+                <li>Administrative experience</li>
+                <li>Excellent communication skills</li>
+              </ul>
+              <h5>Benefits:</h5>
+              <ul>
+                <li>Competitive salary</li>
+                <li>Medical aid</li>
+                <li>Pension fund</li>
+                <li>Skills development</li>
+              </ul>
+            </div>
+            <button class="apply-btn">Apply Now</button>
+          </div>
+        </div>
+
+        <!-- Internship Jobs -->
+        <div id="internship-jobs" class="job-section">
+          <h3><i class="fa fa-graduation-cap"></i> Internship Opportunities</h3>
+          <div class="job-card">
+            <h4>Nursing Student Internship</h4>
+            <p class="job-location"><i class="fa fa-map-marker"></i> Tshilidzini Hospital, Shayandima</p>
+            <p class="job-description">Gain practical experience in a real healthcare environment under supervision.</p>
+            <div class="job-details">
+              <h5>Requirements:</h5>
+              <ul>
+                <li>Currently enrolled in nursing program</li>
+                <li>Completed theoretical training</li>
+                <li>Good academic standing</li>
+                <li>Commitment to healthcare</li>
+              </ul>
+              <h5>Benefits:</h5>
+              <ul>
+                <li>Stipend provided</li>
+                <li>Mentorship program</li>
+                <li>Certificate of completion</li>
+                <li>Potential for permanent position</li>
+              </ul>
+            </div>
+            <button class="apply-btn">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to Apply Section -->
+      <div class="apply-section">
+        <h3><i class="fa fa-file-text"></i> How to Apply</h3>
+        <div class="apply-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Review Requirements</h4>
+              <p>Carefully read the job description and ensure you meet all qualifications.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Prepare Documents</h4>
+              <p>Gather your CV, qualifications, ID, and any other required documents.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Submit Application</h4>
+              <p>Send your application to hr@tshilidzinihospital.co.za or deliver in person.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Interview Process</h4>
+              <p>Successful candidates will be contacted for interviews.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Services</h4>
+        <p>Area of Interest</p>
+        <p>Audiences</p>
+        <p>Life Events</p>
+      </div>
+      <div class="footer-column">
+        <h4>Media</h4>
+        <p>News</p>
+        <p>Announcements</p>
+        <p>Images</p>
+        <p>Videos</p>
+        <p>Projects</p>
+        <p>Events</p>
+        <p>Publications</p>
+      </div>
+      <div class="footer-column">
+        <h4>Our Organisation</h4>
+        <p>Departments</p>
+        <p>Institutions</p>
+        <p>Municipalities</p>
+      </div>
+      <div class="footer-column">
+        <h4>General enquiries</h4>
+        <p><strong>Contact number:</strong><br />+27 15 293 6000</p>
+        <p><strong>Hotline:</strong><br />0800 91 91 91</p>
+        <p><strong>Email address:</strong><br />Lppd.cpu@gmail.com</p>
+        <p><strong>Address:</strong><br />18 College Street<br />Fidel Castro Ruz House<br />Polokwane, South Africa</p>
+      </div>
+      <div class="footer-column">
+        <h4>Connect with us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/LimpopoDepartmentOfHealthBophelong" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/HealthLimpopo" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Download South African<br />Government App</h4>
+        <div class="app-icons">
+          <a href="https://play.google.com/store/apps/details?id=za.gov.sagovapp" target="_blank"><i class="fa fa-android"></i></a>
+          <a href="https://apps.apple.com/za/app/south-african-government?id=1363173160" target="_blank"><i class="fa fa-apple"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("navbar");
+      if (x.className === "") {
+        x.className = "responsive";
+      } else {
+        x.className = "";
+      }
+    }
+
+    function showJobs(category) {
+      // Hide all job sections
+      const sections = document.querySelectorAll('.job-section');
+      sections.forEach(section => section.style.display = 'none');
+
+      // Show the selected category
+      document.getElementById(category + '-jobs').style.display = 'block';
+
+      // Scroll to job listings
+      document.getElementById('job-listings').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Show medical jobs by default
+    document.addEventListener('DOMContentLoaded', function() {
+      showJobs('medical');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News & Media</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="news-media.css" />
+</head>
+
+<body>
+  <!-- Primary Header -->
+  <div id="primary_header">
+     <img id ="logo" src="../images/limpop-province.png"   >
+
+  </div>
+
+  <!-- Secondary Header -->
+  <div id="secondary_header">
+    <h1>Welcome to Tshilidzini Hospital</h1>
+
+  </div>
+
+  <!-- Navigation -->
+  <div id="nav">
+    <div id="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../client.html">Health Information Topics</a>
+      <a href="../about_us.html">About us</a>
+      <a href="../Appointment.html">Documents</a>
+      <a href="../services.html">Services</a>
+      <a href="../HealthFacilities.html">Health Facilities</a>
+      <a href="contact.html">Contact us</a>
+      <a class="active" href="news-media.html">News & Media</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+   <nav class="breadcrumb">
+    <a href="../index.html"><i class="fa fa-home"></i> Home</a>
+    <span>/</span>
+    <span class="current">News & Media</span>
+  </nav>
+
+
+  <!-- Main Content -->
+  <div id="main-content" style="padding: 50px 20px;">
+    <div class="news-media-container">
+      <!-- Tab Navigation -->
+      <div class="tab-navigation">
+        <button class="tab-button active" onclick="showSection('news')">
+          <i class="fa fa-newspaper-o"></i> News
+        </button>
+        <button class="tab-button" onclick="showSection('media')">
+          <i class="fa fa-video-camera"></i> Media
+        </button>
+      </div>
+
+      <!-- News Section -->
+      <section id="news-section" class="section-content active">
+        <h2 class="section-title"><i class="fa fa-newspaper-o"></i> News</h2>
+        <div class="news-grid">
+          <div class="news-item">
+            <i class="fa fa-refresh news-icon"></i>
+            <h3>Latest Hospital Updates</h3>
+            <p>Stay informed with the most recent developments and announcements from Tshilidzini Hospital.</p>
+          </div>
+          <div class="news-item">
+            <i class="fa fa-exclamation-triangle news-icon"></i>
+            <h3>Health Alerts</h3>
+            <p>Important health warnings and safety information for the community.</p>
+          </div>
+          <div class="news-item">
+            <i class="fa fa-calendar news-icon"></i>
+            <h3>Upcoming Events</h3>
+            <p>Check out our schedule of health awareness campaigns, workshops, and community events.</p>
+          </div>
+          <div class="news-item">
+            <i class="fa fa-bullhorn news-icon"></i>
+            <h3>Press Releases</h3>
+            <p>Official statements and announcements from the hospital administration.</p>
+          </div>
+          <div class="news-item">
+            <i class="fa fa-envelope news-icon"></i>
+            <h3>Newsletter Signup</h3>
+            <p>Subscribe to our newsletter for regular updates on health tips and hospital news.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Media Section -->
+      <section id="media-section" class="section-content">
+        <h2 class="section-title"><i class="fa fa-video-camera"></i> Media</h2>
+        <div class="media-grid">
+          <div class="media-item">
+            <i class="fa fa-picture-o media-icon"></i>
+            <h3>Photo Gallery</h3>
+            <p>Explore images from hospital events, facilities, and community outreach programs.</p>
+          </div>
+          <div class="media-item">
+            <i class="fa fa-play-circle media-icon"></i>
+            <h3>Videos</h3>
+            <p>Watch hospital tours, health tips, and educational content on various health topics.</p>
+          </div>
+          <div class="media-item">
+            <i class="fa fa-download media-icon"></i>
+            <h3>Downloadable Brochures</h3>
+            <p>Access informative brochures on services, health conditions, and preventive care.</p>
+          </div>
+          <div class="media-item">
+            <i class="fa fa-bar-chart media-icon"></i>
+            <h3>Infographics</h3>
+            <p>Visual guides to health statistics, procedures, and wellness tips.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Services</h4>
+        <p>Area of Interest</p>
+        <p>Audiences</p>
+        <p>Life Events</p>
+      </div>
+      <div class="footer-column">
+        <h4>Media</h4>
+        <p>News</p>
+        <p>Announcements</p>
+        <p>Images</p>
+        <p>Videos</p>
+        <p>Projects</p>
+        <p>Events</p>
+        <p>Publications</p>
+      </div>
+      <div class="footer-column">
+        <h4>Our Organisation</h4>
+        <p>Departments</p>
+        <p>Institutions</p>
+        <p>Municipalities</p>
+      </div>
+      <div class="footer-column">
+        <h4>General enquiries</h4>
+        <p><strong>Contact number:</strong><br />+27 15 293 6000</p>
+        <p><strong>Hotline:</strong><br />0800 91 91 91</p>
+        <p><strong>Email address:</strong><br />Lppd.cpu@gmail.com</p>
+        <p><strong>Address:</strong><br />18 College Street<br />Fidel Castro Ruz House<br />Polokwane, South Africa</p>
+      </div>
+      <div class="footer-column">
+        <h4>Connect with us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/LimpopoDepartmentOfHealthBophelong" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/HealthLimpopo" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Download South African<br />Government App</h4>
+        <div class="app-icons">
+          <a href="https://play.google.com/store/apps/details?id=za.gov.sagovapp" target="_blank"><i class="fa fa-android"></i></a>
+          <a href="https://apps.apple.com/za/app/south-african-government/id1363173160" target="_blank"><i class="fa fa-apple"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("navbar");
+      if (x.className === "") {
+        x.className = "responsive";
+      } else {
+        x.className = "";
+      }
+    }
+
+    function showSection(sectionName) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.section-content');
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Remove active class from all tab buttons
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach(button => button.classList.remove('active'));
+
+      // Show the selected section
+      document.getElementById(sectionName + '-section').classList.add('active');
+
+      // Add active class to the clicked tab button
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
